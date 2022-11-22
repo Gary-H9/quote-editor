@@ -2,6 +2,8 @@
 -include .env
 export
 
+.PHONY: all test clean
+
 db-setup:
 	bin/setup
 
@@ -10,3 +12,6 @@ run:
 
 serve:
 	bin/dev
+
+test: 
+	bin/rails test:system
