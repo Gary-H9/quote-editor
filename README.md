@@ -1,24 +1,5 @@
-# README
+# [hotrails.dev](hotrails.dev)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository is my output from working on [hotrails.dev](hotrails.dev).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The only noteworthy configuration that you need is PostgreSQL running and available on port `5432`. You can probably run without using PostgreSQL but I can't confirm this until I've completed the tutorial. 
