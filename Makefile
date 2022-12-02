@@ -15,3 +15,6 @@ serve:
 
 test: 
 	bin/rails test:system
+
+seed:
+	bin/rails db:seed
