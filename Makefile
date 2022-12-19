@@ -18,3 +18,9 @@ test:
 
 seed:
 	bin/rails db:seed
+
+redis-up: 
+	docker compose up &
+
+redis-down:
+	docker compose down
