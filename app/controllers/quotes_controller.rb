@@ -16,12 +16,17 @@ class QuotesController < ApplicationController
   end
 
   def create
-    @line_item_date = @quote.line_item_dates.build(line_item_date_params)
+    @quote = current_company.quotes.build(quote_params)
 
-    if @line_item_date.save
+    if @quote.save
       respond_to do |format|
-        format.html { redirect_to quote_path(@quote), notice: "Date was successfully created." }
-        format.turbo_stream { flash.now[:notice] = "Date was successfully created." }
+        format.html do
+          redirect_to quotes_path, notice: "Quote was successfully created."
+        end
+
+        format.turbo_stream do
+          flash.now[:notice] = "Quote was successfully created."
+        end
       end
     else
       render :new, status: :unprocessable_entity
