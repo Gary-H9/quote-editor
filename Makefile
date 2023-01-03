@@ -19,8 +19,11 @@ test:
 seed:
 	bin/rails db:seed
 
-redis-up: 
-	docker compose up &
+redis-start: 
+	sudo service redis-server start
 
-redis-down:
-	docker compose down
+redis-stop:
+	sudo service redis-server stop
+
+redis-status:
+	sudo service redis-server status
