@@ -14,7 +14,7 @@ See [Makefile](https://github.com/Gary-H9/quote-editor/blob/main/Makefile) to ge
 
 When creating controllers turn off turbo functionality to make sure they work properly before doing any improvement.
 
-To 'turn off' Turbo functionality add the final two lines of code below to `app/javascript/application.js`
+To disable Turbo functionality add the final two lines of code below to `app/javascript/application.js`.
 
 ```
 // Entry point for the build script in your package.json
